@@ -15,3 +15,8 @@ class TodoRecord(TodoId, Todo):
 
 class NotFoundException(BaseModel):
     detail: str = "Not Found"
+    
+class TodoRecord(TodoId, Todo):
+    user: str
+    created_date: datetime
+    updated_date: datetime
